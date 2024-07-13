@@ -197,8 +197,8 @@
             bindings = <
 // ╷             ╷             ╷             ╷             ╷             ╷             ╷   ╷             ╷             ╷             ╷             ╷             ╷             ╷
     &trans        &trans        &trans        &trans        &trans        &trans            &trans        &trans        &trans        &trans        &trans        &trans
-    &trans        &trans        &trans        &trans        &trans        &kp PSCRN         &trans        &trans        &trans        &trans        &trans        &trans
-    &trans        &kp LG(LS(Z)) &kp LG(X)     &kp LG(C)     &kp LG(V)     &kp LG(Z)         &trans        &trans        &trans        &trans        &trans        &trans
+    &trans        &trans        &trans        &trans        &trans        &kp LS(LG(N5))    &trans        &trans        &trans        &trans        &trans        &trans
+    &trans        &kp LS(LG(Z)) &kp LG(X)     &kp LG(C)     &kp LG(V)     &kp LG(Z)         &trans        &trans        &trans        &trans        &trans        &trans
                   &trans        &trans        &trans        &trans        &trans            &trans        &trans        &trans        &trans        &trans
                                               &trans        &trans        &trans            &mkp LCLK     &mkp MCLK     &mkp RCLK
             >;
