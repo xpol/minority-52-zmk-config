@@ -19,6 +19,9 @@
 ---
 include:
   - board: seeeduino_xiao_ble
-    shield: redox_left
+    shield: minority_left
+    cmake-args: -DCONFIG_NFCT_PINS_AS_GPIOS=y
   - board: seeeduino_xiao_ble
-    shield: redox_right
+    shield: minority_right
+    cmake-args: -DCONFIG_NFCT_PINS_AS_GPIOS=y
+

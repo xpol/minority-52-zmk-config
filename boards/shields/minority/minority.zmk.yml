@@ -1,0 +1,11 @@
+file_format: "1"
+id: minority
+name: Minority
+type: shield
+url: https://github.com/xpol/minority-keyboard
+requires: [seeeduino_xiao_ble]
+features:
+  - keys
+siblings:
+  - minority_left
+  - minority_right
