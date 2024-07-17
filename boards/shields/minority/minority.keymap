@@ -133,11 +133,11 @@
 // ┏━━━━━━━━━━━━━┳━━━━━━━━━━━━━┳━━━━━━━━━━━━━┳━━━━━━━━━━━━━┳━━━━━━━━━━━━━┳━━━━━━━━━━━━━┓   ┏━━━━━━━━━━━━━┳━━━━━━━━━━━━━┳━━━━━━━━━━━━━┳━━━━━━━━━━━━━┳━━━━━━━━━━━━━┳━━━━━━━━━━━━━┓
 // ┃             ┃             ┃             ┃             ┃             ┃             ┃   ┃             ┃             ┃             ┃             ┃             ┃             ┃
 // ┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━┫   ┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━┫
-// ┃             ┃             ┃     MOVE    ┃    COPY     ┃    PASTE    ┃    UNDO     ┃   ┃             ┃             ┃             ┃             ┃             ┃             ┃
+// ┃             ┃             ┃     CUT     ┃    COPY     ┃    PASTE    ┃    UNDO     ┃   ┃             ┃             ┃             ┃             ┃             ┃             ┃
 // ┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━┫   ┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━┫
-// ┃    REDO     ┃     LEFT    ┃     UP      ┃    DOWN     ┃    RIGHT    ┃    CAPS     ┃   ┃             ┃    RSHFT    ┃    RGUI     ┃    RALT     ┃    RCTRL    ┃             ┃
+// ┃    HOME     ┃     LEFT    ┃     UP      ┃    DOWN     ┃    RIGHT    ┃     END     ┃   ┃             ┃    RSHFT    ┃    RGUI     ┃    RALT     ┃    RCTRL    ┃             ┃
 // ┗━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━┫   ┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━┛
-//               ┃     HOME    ┃   PAGE UP   ┃  PAGE DOWN  ┃     END     ┃    INSERT   ┃   ┃             ┃             ┃             ┃             ┃             ┃
+//               ┃     CAPS    ┃   PAGE UP   ┃  PAGE DOWN  ┃    INSERT   ┃    REDO     ┃   ┃             ┃             ┃             ┃             ┃             ┃
 //               ┗━━━━━━━━━━━━━┻━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━┫   ┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━┻━━━━━━━━━━━━━┛
 //                                           ┃     ESC     ┃     SPC     ┃     TAB     ┃   ┃    ENTER    ┃   [BSPC]    ┃     DEL     ┃
 //                                           ┗━━━━━━━━━━━━━┻━━━━━━━━━━━━━┻━━━━━━━━━━━━━┛   ┗━━━━━━━━━━━━━┻━━━━━━━━━━━━━┻━━━━━━━━━━━━━┛
@@ -145,8 +145,8 @@
 // ╷             ╷             ╷             ╷             ╷             ╷             ╷   ╷             ╷             ╷             ╷             ╷             ╷             ╷
     &trans        &trans        &trans        &trans        &trans        &trans            &trans        &trans        &trans        &trans        &trans        &trans
     &trans        &trans        &kp LG(X)     &kp LG(C)     &kp LG(V)     &kp LG(Z)         &trans        &trans        &trans        &trans        &trans        &trans
-    &kp LG(LS(Z)) &kp LEFT      &kp UP        &kp DOWN      &kp RIGHT     &kp CAPS          &trans        &kp RSHFT     &kp RGUI      &kp RALT      &kp RCTRL     &trans
-                  &kp HOME      &kp PAGE_UP   &kp PAGE_DOWN &kp END       &kp INSERT        &trans        &trans        &trans        &trans        &trans
+    &kp HOME      &kp LEFT      &kp UP        &kp DOWN      &kp RIGHT     &kp END           &trans        &kp RSHFT     &kp RGUI      &kp RALT      &kp RCTRL     &trans
+                  &kp CAPS      &kp PAGE_UP   &kp PAGE_DOWN &kp INSERT    &kp LG(LS(Z))     &trans        &trans        &trans        &trans        &trans
                                               &trans        &trans        &trans            &trans        &trans        &trans
             >;
         };
