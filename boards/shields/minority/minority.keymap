@@ -14,7 +14,6 @@
 #define NUM  2
 #define NAV  3
 #define FUN  4
-#define MOU  5
 
 &mt {
   quick-tap-ms = <200>;
@@ -64,7 +63,7 @@
     &kp GRAVE     &kp CAPS      &kp W         &kp F         &kp P         &kp B             &kp J         &kp L         &kp U         &kp Y         &kp FSLH      &kp BSLH
     &kp Q         &mt LCTRL A   &mt LALT R    &mt LGUI S    &mt LSHFT T   &kp G             &kp M         &mt RSHFT N   &mt RGUI E    &mt RALT I    &mt RCTRL O   &kp APOS
                   &kp Z         &kp X         &kp C         &kp D         &kp V             &kp K         &kp H         &kp COMMA     &kp DOT       &kp SEMI
-                                              &lt MOU ESC   &lt NUM SPC   &lt SYM TAB       &lt SYM RET   &lt NAV BSPC  &lt FUN DEL
+                                              &mt LGUI ESC  &lt NUM SPC   &lt SYM TAB       &lt SYM RET   &lt NAV BSPC  &lt FUN DEL
             >;
         };
 
@@ -107,7 +106,7 @@
 // ┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━┫   ┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━┫
 // ┃             ┃             ┃             ┃             ┃             ┃      (      ┃   ┃      -      ┃      7      ┃      8      ┃      9      ┃             ┃             ┃
 // ┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━┫   ┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━┫
-// ┃             ┃    LCTRL    ┃    LALT     ┃    LGUI     ┃    LSHFT    ┃      )      ┃   ┃      +      ┃      1      ┃      2      ┃      3      ┃      *      ┃      /      ┃
+// ┃             ┃             ┃             ┃             ┃             ┃      )      ┃   ┃      +      ┃      1      ┃      2      ┃      3      ┃      *      ┃      /      ┃
 // ┗━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━┫   ┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━┛
 //               ┃             ┃             ┃             ┃             ┃    CLEAR    ┃   ┃      =      ┃      4      ┃      5      ┃      6      ┃      .      ┃
 //               ┗━━━━━━━━━━━━━┻━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━┫   ┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━┻━━━━━━━━━━━━━┛
@@ -117,7 +116,7 @@
 // ╷             ╷             ╷             ╷             ╷             ╷             ╷   ╷             ╷             ╷             ╷             ╷             ╷             ╷
     &trans        &trans        &trans        &trans        &trans        &trans            &trans        &trans        &trans        &trans        &trans          &trans
     &trans        &trans        &trans        &trans        &trans        &kp LPAR          &kp KP_MINUS  &kp KP_N7     &kp KP_N8     &kp KP_N9     &trans          &trans
-    &trans        &kp LCTRL     &kp LALT      &kp LGUI      &kp LSHFT     &kp RPAR          &kp KP_PLUS   &kp KP_N1     &kp KP_N2     &kp KP_N3     &kp KP_MULTIPLY &kp KP_DIVIDE
+    &trans        &trans        &trans        &trans        &trans        &kp RPAR          &kp KP_PLUS   &kp KP_N1     &kp KP_N2     &kp KP_N3     &kp KP_MULTIPLY &kp KP_DIVIDE
                   &trans        &trans        &trans        &trans        &kp CLEAR2        &kp KP_EQUAL  &kp KP_N4     &kp KP_N5     &kp KP_N6     &kp KP_DOT
                                               &trans        &trans        &trans            &trans        &trans        &kp KP_N0
             >;
@@ -135,7 +134,7 @@
 // ┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━┫   ┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━┫
 // ┃             ┃             ┃     CUT     ┃    COPY     ┃    PASTE    ┃    UNDO     ┃   ┃             ┃             ┃             ┃             ┃             ┃             ┃
 // ┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━┫   ┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━┫
-// ┃    HOME     ┃     LEFT    ┃     UP      ┃    DOWN     ┃    RIGHT    ┃     END     ┃   ┃             ┃    RSHFT    ┃    RGUI     ┃    RALT     ┃    RCTRL    ┃             ┃
+// ┃    HOME     ┃     LEFT    ┃     UP      ┃    DOWN     ┃    RIGHT    ┃     END     ┃   ┃             ┃             ┃             ┃             ┃             ┃             ┃
 // ┗━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━┫   ┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━┛
 //               ┃     CAPS    ┃   PAGE UP   ┃  PAGE DOWN  ┃    INSERT   ┃    REDO     ┃   ┃             ┃             ┃             ┃             ┃             ┃
 //               ┗━━━━━━━━━━━━━┻━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━┫   ┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━┻━━━━━━━━━━━━━┛
@@ -145,7 +144,7 @@
 // ╷             ╷             ╷             ╷             ╷             ╷             ╷   ╷             ╷             ╷             ╷             ╷             ╷             ╷
     &trans        &trans        &trans        &trans        &trans        &trans            &trans        &trans        &trans        &trans        &trans        &trans
     &trans        &trans        &kp LG(X)     &kp LG(C)     &kp LG(V)     &kp LG(Z)         &trans        &trans        &trans        &trans        &trans        &trans
-    &kp HOME      &kp LEFT      &kp UP        &kp DOWN      &kp RIGHT     &kp END           &trans        &kp RSHFT     &kp RGUI      &kp RALT      &kp RCTRL     &trans
+    &kp HOME      &kp LEFT      &kp UP        &kp DOWN      &kp RIGHT     &kp END           &trans        &trans        &trans        &trans        &trans        &trans
                   &kp CAPS      &kp PAGE_UP   &kp PAGE_DOWN &kp INSERT    &kp LG(LS(Z))     &trans        &trans        &trans        &trans        &trans
                                               &trans        &trans        &trans            &trans        &trans        &trans
             >;
@@ -160,9 +159,9 @@
 // ┏━━━━━━━━━━━━━┳━━━━━━━━━━━━━┳━━━━━━━━━━━━━┳━━━━━━━━━━━━━┳━━━━━━━━━━━━━┳━━━━━━━━━━━━━┓   ┏━━━━━━━━━━━━━┳━━━━━━━━━━━━━┳━━━━━━━━━━━━━┳━━━━━━━━━━━━━┳━━━━━━━━━━━━━┳━━━━━━━━━━━━━┓
 // ┃             ┃             ┃             ┃             ┃             ┃             ┃   ┃             ┃             ┃             ┃             ┃             ┃             ┃
 // ┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━┫   ┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━┫
-// ┃             ┃      F9     ┃     F10     ┃     F11     ┃     F12     ┃    VOL+     ┃   ┃     BT1     ┃     BT2     ┃     BT3     ┃     BT4     ┃             ┃             ┃
+// ┃             ┃             ┃     F10     ┃     F11     ┃     F12     ┃    VOL+     ┃   ┃     BT1     ┃     BT2     ┃     BT3     ┃     BT4     ┃             ┃             ┃
 // ┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━┫   ┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━┫
-// ┃      F9     ┃      F5     ┃     F6      ┃     F7      ┃     F8      ┃    VOL-     ┃   ┃             ┃    RSHIFT   ┃    RGUI     ┃    RALT     ┃    RCTRL    ┃             ┃
+// ┃      F9     ┃      F5     ┃     F6      ┃     F7      ┃     F8      ┃    VOL-     ┃   ┃             ┃             ┃             ┃             ┃             ┃             ┃
 // ┗━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━┫   ┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━┛
 //               ┃      F1     ┃     F2      ┃     F3      ┃     F4      ┃    MUTE     ┃   ┃             ┃             ┃             ┃             ┃    BT_CLR   ┃
 //               ┗━━━━━━━━━━━━━┻━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━┫   ┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━┻━━━━━━━━━━━━━┛
@@ -172,35 +171,9 @@
 // ╷             ╷             ╷             ╷             ╷             ╷             ╷   ╷             ╷             ╷             ╷             ╷             ╷             ╷
     &trans        &trans        &trans        &trans        &trans        &trans            &trans        &trans        &trans        &trans        &trans        &trans
     &trans        &trans        &kp F10       &kp F11       &kp F12       &kp C_VOL_UP      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &trans        &trans
-    &kp F9        &kp F1        &kp F2        &kp F3        &kp F4        &kp C_VOL_DN      &trans        &kp RSHIFT    &kp RGUI      &kp RALT      &kp RCTRL     &trans
+    &kp F9        &kp F1        &kp F2        &kp F3        &kp F4        &kp C_VOL_DN      &trans        &trans        &trans        &trans        &trans        &trans
                   &kp F5        &kp F6        &kp F7        &kp F8        &kp C_MUTE        &trans        &trans        &trans        &trans        &bt BT_CLR
                                               &trans        &trans        &trans            &trans        &trans        &trans
-            >;
-        };
-// ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
-
-        mouse_layer {
-// ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-            display-name= "Mouse";
-// ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
-// ┏━━━━━━━━━━━━━┳━━━━━━━━━━━━━┳━━━━━━━━━━━━━┳━━━━━━━━━━━━━┳━━━━━━━━━━━━━┳━━━━━━━━━━━━━┓   ┏━━━━━━━━━━━━━┳━━━━━━━━━━━━━┳━━━━━━━━━━━━━┳━━━━━━━━━━━━━┳━━━━━━━━━━━━━┳━━━━━━━━━━━━━┓
-// ┃             ┃             ┃             ┃             ┃             ┃             ┃   ┃             ┃             ┃             ┃             ┃             ┃             ┃
-// ┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━┫   ┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━┫
-// ┃             ┃             ┃             ┃             ┃             ┃ PRINTSCREEN ┃   ┃             ┃             ┃             ┃             ┃             ┃             ┃
-// ┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━┫   ┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━┫
-// ┃             ┃    REDO     ┃     CUT     ┃     COPY    ┃    PASTE    ┃    UNDO     ┃   ┃             ┃             ┃             ┃             ┃             ┃             ┃
-// ┗━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━┫   ┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━┛
-//               ┃             ┃             ┃             ┃             ┃             ┃   ┃             ┃             ┃             ┃             ┃             ┃
-//               ┗━━━━━━━━━━━━━┻━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━┫   ┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━┻━━━━━━━━━━━━━┛
-//                                           ┃    [ESC]    ┃     SPC     ┃     TAB     ┃   ┃    ENTER    ┃    BSPC     ┃     DEL     ┃
-//                                           ┗━━━━━━━━━━━━━┻━━━━━━━━━━━━━┻━━━━━━━━━━━━━┛   ┗━━━━━━━━━━━━━┻━━━━━━━━━━━━━┻━━━━━━━━━━━━━┛
-            bindings = <
-// ╷             ╷             ╷             ╷             ╷             ╷             ╷   ╷             ╷             ╷             ╷             ╷             ╷             ╷
-    &trans        &trans        &trans        &trans        &trans        &trans            &trans        &trans        &trans        &trans        &trans        &trans
-    &trans        &trans        &trans        &trans        &trans        &kp LS(LG(N5))    &trans        &trans        &trans        &trans        &trans        &trans
-    &trans        &kp LS(LG(Z)) &kp LG(X)     &kp LG(C)     &kp LG(V)     &kp LG(Z)         &trans        &trans        &trans        &trans        &trans        &trans
-                  &trans        &trans        &trans        &trans        &trans            &trans        &trans        &trans        &trans        &trans
-                                              &trans        &trans        &trans            &mkp LCLK     &mkp MCLK     &mkp RCLK
             >;
         };
     };
