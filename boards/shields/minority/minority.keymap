@@ -77,20 +77,20 @@
 // ┏━━━━━━━━━━━━━┳━━━━━━━━━━━━━┳━━━━━━━━━━━━━┳━━━━━━━━━━━━━┳━━━━━━━━━━━━━┳━━━━━━━━━━━━━┓   ┏━━━━━━━━━━━━━┳━━━━━━━━━━━━━┳━━━━━━━━━━━━━┳━━━━━━━━━━━━━┳━━━━━━━━━━━━━┳━━━━━━━━━━━━━┓
 // ┃             ┃             ┃             ┃             ┃             ┃             ┃   ┃             ┃             ┃             ┃             ┃             ┃             ┃
 // ┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━┫   ┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━┫
-// ┃             ┃             ┃      <      ┃      >      ┃      "      ┃      '      ┃   ┃      &      ┃      @      ┃      [      ┃      ]      ┃             ┃             ┃
+// ┃             ┃             ┃      <      ┃      >      ┃      `      ┃      "      ┃   ┃      &      ┃      @      ┃      [      ┃      ]      ┃             ┃             ┃
 // ┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━┫   ┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━┫
-// ┃      ^      ┃      !      ┃      -      ┃      +      ┃      =      ┃      #      ┃   ┃      |      ┃      :      ┃      (      ┃      )      ┃      ?      ┃      %      ┃
+// ┃      ^      ┃      !      ┃      -      ┃      +      ┃      =      ┃      _      ┃   ┃      |      ┃      :      ┃      (      ┃      )      ┃      ?      ┃      %      ┃
 // ┗━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━┫   ┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━┛
-//               ┃      ,      ┃      _      ┃      *      ┃      \      ┃      `      ┃   ┃      ~      ┃      $      ┃      {      ┃      }      ┃      .      ┃
+//               ┃      ,      ┃      /      ┃      *      ┃      \      ┃      #      ┃   ┃      ~      ┃      $      ┃      {      ┃      }      ┃      .      ┃
 //               ┗━━━━━━━━━━━━━┻━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━┫   ┣━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━╋━━━━━━━━━━━━━┻━━━━━━━━━━━━━┛
 //                                           ┃     ESC     ┃     SPC     ┃    [TAB]    ┃   ┃   [ENTER]   ┃    BSPC     ┃     DEL     ┃
 //                                           ┗━━━━━━━━━━━━━┻━━━━━━━━━━━━━┻━━━━━━━━━━━━━┛   ┗━━━━━━━━━━━━━┻━━━━━━━━━━━━━┻━━━━━━━━━━━━━┛
             bindings = <
 // ╷             ╷             ╷             ╷             ╷             ╷             ╷   ╷             ╷             ╷             ╷             ╷             ╷             ╷
     &trans        &trans        &trans        &trans        &trans        &trans            &trans        &trans        &trans        &trans        &trans        &trans
-    &trans        &trans        &kp LT        &kp GT        &kp DQT       &kp SQT           &kp AMPS      &kp AT        &kp LBKT      &kp RBKT      &trans        &trans
-    &kp CARET     &kp EXCL      &kp MINUS     &kp PLUS      &kp EQUAL     &kp HASH          &kp PIPE      &kp COLON     &kp LPAR      &kp RPAR      &kp QMARK     &kp PERCENT
-                  &kp COMMA     &kp UNDER     &kp ASTRK     &kp BSLH      &kp GRAVE         &kp TILDE     &kp DOLLAR    &kp LBRC      &kp RBRC      &kp DOT
+    &trans        &trans        &kp LT        &kp GT        &kp GRAVE     &kp DQT           &kp AMPS      &kp AT        &kp LBKT      &kp RBKT      &trans        &trans
+    &kp CARET     &kp EXCL      &kp MINUS     &kp PLUS      &kp EQUAL     &kp UNDER         &kp PIPE      &kp COLON     &kp LPAR      &kp RPAR      &kp QMARK     &kp PERCENT
+                  &kp COMMA     &kp FSLH      &kp ASTRK     &kp BSLH      &kp HASH          &kp TILDE     &kp DOLLAR    &kp LBRC      &kp RBRC      &kp DOT
                                               &trans        &trans        &trans            &trans        &trans        &trans
             >;
         };
