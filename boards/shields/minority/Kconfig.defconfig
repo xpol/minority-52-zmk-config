@@ -4,7 +4,7 @@
 if SHIELD_MINORITY_LEFT
 
 config ZMK_KEYBOARD_NAME
-    default "Minority"
+    default "Minority 52"
     
 config ZMK_SPLIT_ROLE_CENTRAL
     default y

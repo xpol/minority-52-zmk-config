@@ -6,6 +6,7 @@ url: https://github.com/xpol/minority-keyboard
 requires: [seeeduino_xiao_ble]
 features:
   - keys
+  - studio
 siblings:
   - minority_left
   - minority_right
